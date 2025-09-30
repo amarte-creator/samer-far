@@ -15,6 +15,10 @@ export default function ClerkThemeProvider({
 
   return (
     <ClerkProvider
+      signUpUrl="/sign-up"
+      signInUrl="/sign-in"
+      signUpForceRedirectUrl="/"
+      signInForceRedirectUrl="/"
       appearance={{
         baseTheme: theme === 'dark' ? dark : undefined,
         variables: {

@@ -4,6 +4,7 @@ import ExpenseStats from '@/components/ExpenseStats';
 import Guest from '@/components/Guest';
 import RecordChart from '@/components/RecordChart';
 import RecordHistory from '@/components/RecordHistory';
+import UploadReceipt from '@/components/UploadReceipt';
 import { currentUser } from '@clerk/nextjs/server';
 
 export default async function HomePage() {
@@ -83,6 +84,8 @@ export default async function HomePage() {
             </div>
             {/* Add New Expense */}
             <AddNewRecord />
+            {/* Upload Receipt */}
+            <UploadReceipt />
           </div>
 
           {/* Right Column - Stacked below on mobile */}

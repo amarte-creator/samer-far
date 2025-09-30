@@ -32,6 +32,9 @@ const AddRecord = () => {
       setAmount(50); // Reset the amount to the default value
       setCategory(''); // Reset the category
       setDescription(''); // Reset the description
+      
+      // Dispatch custom event to notify other components
+      window.dispatchEvent(new CustomEvent('recordAdded'));
     }
 
     setIsLoading(false); // Hide spinner
